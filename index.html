@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Assets/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+<!--navbar starts-->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h2 class="is-inline-block mt-1" id="weatherTitle">Weather Dashboard</h2>
+            <!--navbar-burger for mobile devices-->
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>   
+        </div>
+        <!--navbar tab links-->
+        <div class="navbar-menu" id="links">
+            <div class="navbar-end">
+                <a class="navbar-item" href="#search">Search</a>
+                <a class="navbar-item" href="#contactUs">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+<!--end of navbar-->
+<!--brief instruction intro to navigate user about webpage-->
+    <div class="intro">
+        <h2>Search for a city below to receive a 5 day forecast</h2>
+    </div>
+<!--end of instructions-->
+<!--search bar starts-->
+    <div id="search" class="row">
+        <div  id="searchResults">
+            <div class="row">
+                <div class="col-12">
+                    <h4><strong>Search for a city:</strong></h4>
+                </div>
+            </div>
+            <!--search bar form-control-->
+            <div class="row">
+                <div class="col-12">
+                    <div class="input-group">
+                        <input class="form-control" type="text" id="enterCity" placeholder="Enter city name">
+                        <button type="button" id="searchBtn" class="btn btn-primary">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--search history created by user-->
+            <div class="row mt-3">
+                <div class="col-12">
+                    <ul id="searchHistory" class="list-group">
+                        <!-- append search history from user 'li class="list-group-item"''-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--displays current weather of city searched by user-->
+        <div id="weatherContent" class="col-9 pb-4 pt-4">
+            <div class="row pb-3 mr-2 ml-2">
+                <div id="cityForecast" class="col-12 border rounded px-3 py-3">
+                    <!-- display currentCityForecast here text with p from js-->
+                </div>
+            </div>
+            <!--5 day forecast title-->
+            <div class="row pb-2 pt-1">
+                <div class="col-12 ml-2">
+                    <h3>5 Day Forecast:</h3>
+                </div>
+            </div>
+            <!--5 day forecast cards-->
+            <div id="fiveDay" class="row pl-2">
+                <!-- add 5 day forecast info here from js-->
+            </div>
+        </div>
+    </div>
+ <!--end of search bar and weather forecast display-->
+  <!--footer-->
+  <footer class="bg-light text-center text-white mt-auto" id="contactUs">
+    <div class="container p-4 pb-0">
+    <!-- social media links -->
+        <section class="mb-4">
+        <!-- linkedin -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="https://www.linkedin.com/in/jennyfer-constanza-6684a6235/" target="_blank" role="button">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+      <!-- github -->
+            <a class="btn btn-primary btn-floating m-1"style="background-color: #333333;" href="https://github.com/jennyferconstanza"target="_blank" role="button"> 
+                <i class="fab fa-github"></i >
+            </a>
+        </section>
+    <!-- end of social media links -->
+    </div>
+    <div class="text-center p-3" style="background-color: #6c737d;">
+        By Jennyfer Constanza
+    </div>
+</footer>
+<!-- end of footer -->    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1d37754851.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./Assets/script.js"></script>
+</body>
+</html>

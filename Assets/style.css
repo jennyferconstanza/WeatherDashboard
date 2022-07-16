@@ -1,0 +1,92 @@
+/*import from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*variables*/
+:root {
+    --gray-color:#b6c5db;
+    --darkgray-color: #6c737d;
+    --navy-color: navy;
+    --white-color: #fff;
+}
+/*body styling*/
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--gray-color);
+}
+/*intro styling*/
+.intro {
+    text-align: center;
+    margin-top: 20px;
+}
+/*end of intro styling*/
+/*navbar styling*/
+#weatherTitle {
+    color: var(--white-color);
+}
+.navbar-item {
+  color: var(--white-color);
+}
+.navbar {
+  border: solid;
+  border-color: rgb(196, 196, 196);
+  border-radius: 10px;
+  height: 150px;
+  background-color: var(--darkgray-color)
+}
+.navbar-burger {
+  color: white;
+}
+.navbar-burger:hover {
+    background-color: transparent;
+    color: white;
+}
+a.navbar-item {
+  color: var(--white-color);
+}
+a.navbar-item:hover{
+  background-color: var(--navy-color);
+  color: var(--white-color);
+}
+/*end of navbar*/
+/*search styling*/
+#searchHistory li {
+    background-color: var(--darkgray-color);
+    color: var(--white-color)!important;
+    cursor: pointer;
+}
+#searchHistory li:hover{
+  background-color: var(--navy-color);
+  color: var(--white-color);
+  border-radius: 10px;
+}
+#searchResults, #cityDetail, .card {
+    background-color: transparent!important;
+}
+#fiveDay .card {
+    border: 1px solid --white-color!important;
+    border-radius: 30px;
+    display: flex;
+}
+#weatherContent {
+    display: block;
+}
+/*end of search styling*/
+/*5 day cards*/
+.pl-2 {
+    padding-left: 2rem!important;
+    width: 100%; 
+}
+/*footer styling*/
+#contactUs {
+    background-color: transparent!important;
+}
+/*end of footer styling*/
+/*media query for mobile devices*/
+@media screen and (max-width: 1023px) {
+.navbar-menu {
+    padding: 1px;
+    width: 100%;
+}
+a.navbar-item {
+  color: var(--navy-color);
+}
+}
