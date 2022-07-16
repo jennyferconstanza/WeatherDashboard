@@ -14,7 +14,7 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
-![Screenshot of Webpage Mock Up](./assets/weatherdashss.png)
+![Screenshot of Webpage Mock Up](./Assets/weatherdashss.png)
 
 ## Link to Deployed Application 
-Open the Work Day Scheduler [URL]() in your browser. 
+Open the Work Day Scheduler [URL](https://jennyferconstanza.github.io/WeatherDashboard/) in your browser. 
